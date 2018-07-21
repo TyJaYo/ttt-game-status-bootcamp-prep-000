@@ -26,3 +26,13 @@ end
 def full?(board)
   board.all? do |b| position_taken?(board,b) end
 end
+
+def draw?(board)
+  if full?(board) == true && won?(board) == false
+end
+
+def over?(board)
+  if draw?board || won?(board)
+end
+
+def winner(board) { puts won?(board)[0] }
