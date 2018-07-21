@@ -23,4 +23,6 @@ def won?(board)
   end
 end
 
-p won?(["X", " ", "X", "O", "O", "O", " ", " ", " "])
+def full?(board)
+  board.all? do |b| position_taken?(board,b) end
+end
