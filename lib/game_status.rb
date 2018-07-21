@@ -20,7 +20,7 @@ def won?(board)
     if win.all? do |pos| board[pos] == "X" end || win.all? do |pos| board[pos] == "O" end
       return win
     else
-      false
+      1 == 2
     end
   end
 end
