@@ -35,4 +35,4 @@ def over?(board)
   if draw?board || won?(board)
 end
 
-def winner(board) { won?(board)[0] }
+def winner(board) do won?(board)[0] end
