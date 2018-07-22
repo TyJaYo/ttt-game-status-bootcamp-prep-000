@@ -36,5 +36,5 @@ def over?(board)
 end
 
 def winner(board)
-  .try { board[won?(board).first] }
+  try { board[won?(board).first] }
 end
