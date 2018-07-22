@@ -32,7 +32,7 @@ def draw?(board)
 end
 
 def over?(board)
-  draw?board || won?(board)
+  draw?board || won?(board) != false
 end
 
 def winner(board)
